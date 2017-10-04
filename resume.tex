@@ -1,7 +1,8 @@
-\documentclass[line, margin, 13pt]{res}
+\documentclass[line, margin, 11pt]{res}
 \usepackage{hyperref}
 \usepackage{textcomp}
 \usepackage[defblank]{paralist}
+\usepackage[none]{hyphenat}
 
 \begin{document}
 \name{\Huge{Stephen Greene}}
@@ -22,28 +23,28 @@ GPA: 3.38
 
 \section{PROJECTS}
 {\bf \href{https://github.com/sgreene570/audiophiler}{Audiophiler}} \hfill Summer/Fall 2017 \\
-Python/Flask web application that leverages AWS s3 and sqlalchemy to serve audio
-files.  Flask API exposes favorite audio files to users behind OIDC authentication.
-Uses a Jinja2 templated front end to display audio files and allow for web uploading.
+Python/Flask web application that leverages AWS s3 and SQLAlchemy to serve audio
+files.  Flask API exposes favorite audio files to users through s3 presigned URLs.
+Uses a Jinja2 templated front end to display audio files and allow for web uploading.  SQLAlchemy binds
+to a Postgres database to store s3 storage records as well as preffered songs by user.
 \\
 \\
 {\bf \href{https://github.com/sgreene570/SortedDictADT}{SortredDictADT}} \hfill Spring/Summer 2017 \\
 Implementation of a sorted dictionary data structure in C.  Uses a dynamically allocated linked list with comparator functions
-to recreate the behavior of a sorted dictionary.  Compatible with generic abstract data types.\\
+to recreate the behavior of a sorted dictionary.  Compatible with generic abstract data types.
 
 \section{SKILLS}
 \begin{compactdesc}
-    \item[Languages] \begin{inparaenum} {Python, Java, C, \LaTeX, Bash, Golang(learning)} \end{inparaenum}
+    \item[Languages] \begin{inparaenum} {Python, Java, C, \LaTeX, Bash, Golang (learning)} \end{inparaenum}
     \item[Operating Systems] \begin{inparaenum} {Linux: Debian, Ubuntu, RHEL} \end{inparaenum}
     \item[Technologies] \begin{inparaenum} {Flask, Ansible, Openshift, Kerberos, Postgres, Myqsl, Git, GitHub} \end{inparaenum}
-    \\
 \end{compactdesc}
 
 \section{EXPERIENCE}
 {\bf \large{Assistant System Administrator}} \hfill July 2017 - Present \\
 {\bf Rochester Institute of Technology} \\
 Manage several RHEL and Ubuntu systems using Ansible.  Deploy services on oVirt cluster virtual machines.  Work closely with full
-time employees to maintain uptime and meet deadlines.  Use department wide version control to develop automation solutions and write documentation. \\
+time employees to maintain uptime and meet deadlines.  Use department wide version control to develop automation solutions and write documentation.
 
 \section{ACTIVITIES}
 {\bf \large{Computer Science House}} \hfill August 2016 - Present \\
