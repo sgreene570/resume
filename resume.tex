@@ -4,6 +4,8 @@
 \usepackage{tikz}
 \usepackage[defblank]{paralist}
 \usepackage[none]{hyphenat}
+\usepackage{paralist}
+
 
 \newcommand{\ExternalLink}{%
     \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
@@ -31,17 +33,37 @@
 
 \begin{resume}
 
+\section{OBJECTIVE}
+Seeking a software engineering internship involving C for the summer of 2019.
+
 \section {CONTACT}
 4255 East River Road, Unit 27 \hfill sgreene570@gmail.com \\
 West Henrietta, NY 14586 \hfill (908) 300-1030 \\
 \url{https://stevegreene.me} \hfill \url{https://github.com/sgreene570}
 
+\section{EXPERIENCE}
+{\bf \large{Software Engineering Co-op}} \hfill January 2018 - July 2018 \\
+{\bf Intuit Inc, Mountain View, CA} \hfill \url{https://www.intuit.com}
+\begin{compactitem}
+    \item Optimized Java backend for Quickbooks Online Accountant.
+    \item Leveraged Splunk to create real time performance metrics.
+    \item Reduced Oracle DB call times dramatically.
+\end{compactitem}
+
+{\bf \large{Assistant System Administrator}} \hfill July 2017 - December 2017 \\
+{\bf Rochester Institute of Technology} \hfill \url{https://rc.rit.edu}
+\begin{compactitem}
+    \item Managed RHEL and Ubuntu university systems using Ansible.
+    \item Deployed services on oVirt cluster virtual machines.
+    \item Used department wide version control to develop automation solutions.
+\end{compactitem}
+
 \section{EDUCATION}
 {\bf Bachelor of Science in Computer Science} \\
 Rochester Institute of Technology, Rochester, NY \\
 Expected Graduation: Summer 2020 \\
-Minor: Mathematics \\
-GPA: 3.39
+Minor: Mathematics, GPA: 3.39
+
 
 \section{PROJECTS}
 {\bf \ExternalLink \href{https://github.com/sgreene570/audiophiler}{Audiophiler}} \hfill Summer/Fall 2017 \\
@@ -51,34 +73,22 @@ SQLAlchemy binds to a PostgreSQL database to store s3 storage records as well as
 \\
 \\
 {\bf \ExternalLink \href{https://github.com/sgreene570/sampleZone}{Sample Zone}} \hfill Summer 2018 \\
-Ncurses based terminal audio file sequencer and player.  Written in C using Pthreads and ALSA libraries.  Interprets WAV type files
-with user defined pitch control.
+Ncurses based terminal audio file sequencer and player.  Written in C using POSIX threads and ALSA.  Keyboard input
+controls playback settings of WAV audio files in real time.
 
 \section{SKILLS}
 \begin{compactdesc}
-    \item[Languages] \begin{inparaenum} {Python, C, Java, Golang, \LaTeX, Bash} \end{inparaenum}
-    \item[Operating Systems] \begin{inparaenum} {Linux: Debian, Ubuntu, RHEL, OSX} \end{inparaenum}
-    \item[Technologies] \begin{inparaenum} {Splunk, Openshift, PostgreSQL, MySQL, Git, Neovim} \end{inparaenum}
+    \item[Languages] \begin{inparaenum} {C, Python, Java, Golang, \LaTeX, Bash} \end{inparaenum}
+    \item[Operating Systems] \begin{inparaenum} {Linux: Debian/RHEL, OSX} \end{inparaenum}
+    \item[Technologies] \begin{inparaenum} {Splunk, Openshift, PostgreSQL, MySQL, Git, GitHub, Neovim} \end{inparaenum}
 \end{compactdesc}
-
-\section{EXPERIENCE}
-{\bf \large{Software Engineering Co-op}} \hfill January 2018 - July 2018 \\
-{\bf Intuit Inc, Mountain View, CA} \hfill \url{https://www.intuit.com} \\
-Optimize Java backend for Quickbooks Online Accountant onboard a performance oriented team.  Leverage Splunk to create real
-time performance metrics and identify key workflows where performance was lacking.  Improve Oracle DB call times dramatically.
-\\
-\\
-{\bf \large{Assistant System Administrator}} \hfill July 2017 - December 2017 \\
-{\bf Rochester Institute of Technology} \hfill \url{https://rc.rit.edu} \\
-Manage several RHEL and Ubuntu systems using Ansible.  Deploy services on oVirt cluster virtual machines.  Use department wide version control to
-develop automation solutions and write documentation.
 
 \section{ACTIVITIES}
 {\bf \large{Computer Science House}} \hfill August 2016 - Present \\
 {\bf Root Type Person (System Administrator)} \hfill \url{https://csh.rit.edu} \\
 Manage Linux systems for a computing focused living-learning community.
-Computer Science House (CSH) has around 100 active members and hundreds of alumni
-who use CSH provided services for working on technical projects.
+Provide computing resources for personal and group based technical projects.
+
 
 \end{resume}
 
