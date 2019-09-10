@@ -1,0 +1,13 @@
+before_deploy: rm *.log *.md *.cls *.tex Makefile
+deploy:
+    access_key_id: $ACCESS_KEY
+    bucket: $BUCKET
+    edge: true
+    endpoint: $ENDPOINT
+    force_path_style: true
+    provider: s3
+    secret_access_key: $SECRET_KEY
+install: sudo apt-get install -y texlive pgf texlive-latex-extra
+language: minimal
+script:
+    - make
