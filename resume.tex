@@ -1,7 +1,5 @@
 \documentclass[line, margin, 11pt]{res}
-\usepackage{hyperref}
-\usepackage{textcomp}
-\usepackage{tikz}
+\usepackage{hyperref} \usepackage{textcomp} \usepackage{tikz}
 \usepackage[defblank]{paralist}
 \usepackage[none]{hyphenat}
 \usepackage{paralist}
@@ -33,7 +31,7 @@
 \begin{resume}
 
 \section{\small OBJECTIVE}
-Seeking a Software Engineering role involving Kubernetes and Linux Containers.
+Seeking a remote Software Engineering role involving Kubernetes development and Linux Container technologies.
 
 \section{\small CONTACT}
 sgreene570@gmail.com \\
@@ -46,9 +44,9 @@ sgreene570@gmail.com \\
 {\bf Red Hat, Raleigh, NC} \hfill \url{https://redhat.com}
 \begin{compactitem}
     \item Engineer on the OpenShift Network Edge team.
-    \item Work to provide Ingress capabilities to applications running in a managed Kubernetes environment.
-    \item Utilize HAProxy and CoreDNS, along with the Kubernetes Operator Pattern, to deliver reliable network configurations for inbound cluster traffic.
-    \item Integrate with OpenShift Prometheus components to deliver networking metrics to cluster administrators.
+    \item Utilize HAProxy and CoreDNS, along with the Kubernetes Operator Pattern, to provide robust network components for OpenShift.
+    \item Integrate with OpenShift Prometheus components to deliver Ingress metrics to cluster administrators.
+    \item Use cloud provider APIs to expose cluster applications via public facing Load Balancers on AWS, Azure, GCP, etc.
 \end{compactitem}
 
 
@@ -56,7 +54,6 @@ sgreene570@gmail.com \\
 {\bf Red Hat, San Francisco, CA} \hfill \url{https://redhat.com}
 \begin{compactitem}
     \item Contributed to the OpenShift Machine Config Operator, a Kubernetes Operator that manages cluster nodes.
-    \item Developed documentation for Red Hat CoreOS, an immutable operating system intended for use in OpenShift clusters.
 \end{compactitem}
 
 
@@ -64,33 +61,31 @@ sgreene570@gmail.com \\
 {\bf Intuit, Mountain View, CA} \hfill \url{https://intuit.com}
 \begin{compactitem}
     \item Optimized Java backend for Quickbooks Online Accountant.
-    \item Leveraged Splunk to create real-time performance metrics.
 \end{compactitem}
+
 
 \section{\small EDUCATION}
 {\bf Bachelor of Science in Computer Science} \\
 Rochester Institute of Technology, Rochester, NY \\
-Attained: May 2020 \\
-Minor: Mathematics, GPA: 3.43
+{\bf Minor:\bf} Mathematics {\bf GPA:\bf} 3.43 \\
+Grduated with Honors Distinction in May 2020.\\
 
 
 \section{\small PROJECTS}
-{\bf \ExternalLink \href{https://github.com/sgreene570/audiophiler}{Audiophiler}} \hfill Summer/Fall 2017 \\
-Python/Flask web application that leverages AWS S3 and SQLAlchemy to serve audio
-files.  Flask API exposes favorite audio files to users through s3 presigned URLs.
+{\bf \ExternalLink \href{https://github.com/openshift/cluster-ingress-operator}{OpenShift Ingress Operator}}
+\begin{compactitem}
+    \item Enables external access to an OpenShift cluster by creating IngressController custom resources.
+    \item Monitors cluster Ingress capabilities and ensures external cluster application access is available.
+\end{compactitem}
 
 
 \section{\small SKILLS}
 \begin{compactdesc}
-    \item[Languages] \begin{inparaenum} {Go, C, Python, Java} \end{inparaenum}
-    \item[Operating Systems] \begin{inparaenum} {Linux: Debian, Fedora, RHEL, Fedora CoreOS} \end{inparaenum}
-    \item[Technologies] \begin{inparaenum} {Kubernetes / OpenShift, Git, GitHub, Vim, Prometheus, Ceph} \end{inparaenum}
+    \item[Languages] \begin{inparaenum} {Go, C, Python, Java, Bash} \end{inparaenum}
+    \item[Operating Systems] \begin{inparaenum} {Linux: Debian, Fedora, RHEL, Docker} \end{inparaenum}
+    \item[Technologies] \begin{inparaenum} {Kubernetes / OpenShift, Git, GitHub, Vim, Prometheus, HAProxy} \end{inparaenum}
+    \item[Recreation] \begin{inparaenum} {Rock Climbing, Hiking, 3D Printing, Music, Puzzles, Automobiles} \end{inparaenum}
 \end{compactdesc}
 
-\section{\small ACTIVITIES}
-{\bf \large{RIT Computer Science House}} \hfill August 2016 - Present \\
-Root Type Person (System Administrator) \hfill \url{https://csh.rit.edu}\\
-
 \end{resume}
-
 \end{document}
