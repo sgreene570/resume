@@ -1,8 +1,12 @@
 \documentclass[line, margin, 11pt]{res}
-\usepackage{hyperref} \usepackage{textcomp} \usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{tikz}
 \usepackage[defblank]{paralist}
 \usepackage[none]{hyphenat}
 \usepackage{paralist}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
 
 \newcommand{\ExternalLink}{%
     \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
@@ -26,7 +30,7 @@
     }
 
 \begin{document}
-\name{\Huge{Stephen Greene}}
+\name{\huge{Stephen Greene}}
 
 \begin{resume}
 
@@ -42,49 +46,49 @@ sgreene570@gmail.com \\
 \section{\small EXPERIENCE}
 {\bf \large{Associate Software Engineer}} \hfill June 2020 - Present \\
 {\bf Red Hat, Raleigh, NC} \hfill \url{https://redhat.com}
-\begin{compactitem}
+\begin{itemize}
     \item Engineer on the OpenShift Network Edge team.
     \item Utilize HAProxy and CoreDNS, along with the Kubernetes Operator Pattern, to provide robust network components for OpenShift.
     \item Integrate with OpenShift Prometheus components to deliver Ingress metrics to cluster administrators.
     \item Use cloud provider APIs to expose cluster applications via public facing Load Balancers on AWS, Azure, GCP, etc.
-\end{compactitem}
+\end{itemize}
 
 
 {\bf \large{OpenShift Internship}} \hfill May 2019 - August 2019 \\
 {\bf Red Hat, San Francisco, CA} \hfill \url{https://redhat.com}
-\begin{compactitem}
+\begin{itemize}
     \item Contributed to the OpenShift Machine Config Operator, a Kubernetes Operator that manages cluster nodes.
-\end{compactitem}
+    \item Contributed to Red Hat CoreOS, an immutable opreating system that powers OpenShift nodes.
+\end{itemize}
 
 
 {\bf \large{Software Engineering Co-op}} \hfill January 2018 - July 2018 \\
 {\bf Intuit, Mountain View, CA} \hfill \url{https://intuit.com}
-\begin{compactitem}
+\begin{itemize}
     \item Optimized Java backend for Quickbooks Online Accountant.
-\end{compactitem}
+\end{itemize}
 
 
 \section{\small EDUCATION}
-{\bf Bachelor of Science in Computer Science} \\
+{\bf Bachelor of Science in Computer Science} \hfill May 2020\\
 Rochester Institute of Technology, Rochester, NY \\
-{\bf Minor:\bf} Mathematics {\bf GPA:\bf} 3.43 \\
-Grduated with Honors Distinction in May 2020.\\
+{\bf Minor:\bf} Mathematics {\bf GPA:\bf} 3.43 (Honors Distinction)
 
 
 \section{\small PROJECTS}
 {\bf \ExternalLink \href{https://github.com/openshift/cluster-ingress-operator}{OpenShift Ingress Operator}}
-\begin{compactitem}
+\begin{itemize}
     \item Enables external access to an OpenShift cluster by creating IngressController custom resources.
     \item Monitors cluster Ingress capabilities and ensures external cluster application access is available.
-\end{compactitem}
+\end{itemize}
 
 
 \section{\small SKILLS}
 \begin{compactdesc}
     \item[Languages] \begin{inparaenum} {Go, C, Python, Java, Bash} \end{inparaenum}
     \item[Operating Systems] \begin{inparaenum} {Linux: Debian, Fedora, RHEL, Docker} \end{inparaenum}
-    \item[Technologies] \begin{inparaenum} {Kubernetes / OpenShift, Git, GitHub, Vim, Prometheus, HAProxy} \end{inparaenum}
-    \item[Recreation] \begin{inparaenum} {Rock Climbing, Hiking, 3D Printing, Music, Puzzles, Automobiles} \end{inparaenum}
+    \item[Technologies] \begin{inparaenum} {Kubernetes / OpenShift, Git, GitHub, Vim, Prometheus} \end{inparaenum}
+    \item[Recreation] \begin{inparaenum} {Rock Climbing, Hiking, 3D Printing, Music, Disc Golf} \end{inparaenum}
 \end{compactdesc}
 
 \end{resume}
