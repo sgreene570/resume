@@ -30,12 +30,12 @@
     }
 
 \begin{document}
-\name{\huge{Stephen Greene}}
+\name{\Huge{Stephen Greene}}
 
 \begin{resume}
 
 \section{\small OBJECTIVE}
-Seeking a remote Software Engineering role involving Kubernetes development and Linux Containers.
+Seeking a remote Software Engineering role involving Kubernetes and networking.
 
 \section{\small CONTACT}
 sgreene570@gmail.com \\
@@ -47,18 +47,19 @@ sgreene570@gmail.com \\
 {\bf \large{Associate Software Engineer}} \hfill June 2020 - Present \\
 {\bf Red Hat, Raleigh, NC} \hfill \url{https://redhat.com}
 \begin{itemize}
-    \item Engineer on the OpenShift Network Edge team.
-    \item Utilize HAProxy and CoreDNS, along with the Kubernetes Operator Pattern, to provide robust network components for OpenShift.
-    \item Integrate with OpenShift Prometheus components to deliver Ingress metrics to cluster administrators.
-    \item Use cloud provider APIs to expose cluster applications via public facing Load Balancers on AWS, Azure, GCP, etc.
+    \item Engineer on the OpenShift Container Platform Network Edge team.
+    \item Manage HAProxy-based Ingress Controllers via a Kubernetes Operator.
+    \item Enable cluster DNS via distributed CoreDNS instances.
+    \item Integrate with OpenShift's Prometheus stack to deliver cluster Ingress \& DNS metrics to cluster administrators.
+    \item Interact with upstream Kubernetes communities, such as sig-network.
 \end{itemize}
 
 
 {\bf \large{OpenShift Internship}} \hfill May 2019 - August 2019 \\
 {\bf Red Hat, San Francisco, CA} \hfill \url{https://redhat.com}
 \begin{itemize}
-    \item Contributed to the OpenShift Machine Config Operator, a Kubernetes Operator that manages cluster nodes.
-    \item Contributed to Red Hat CoreOS, an immutable opreating system that powers OpenShift nodes.
+    \item Worked on the OpenShift Machine Config Operator, a Kubernetes Operator that manages cluster nodes.
+    \item Contributed to Red Hat CoreOS, a unique "immutable" operating system that powers OpenShift nodes.
 \end{itemize}
 
 
@@ -72,21 +73,23 @@ sgreene570@gmail.com \\
 \section{\small EDUCATION}
 {\bf Bachelor of Science in Computer Science} \hfill May 2020\\
 Rochester Institute of Technology, Rochester, NY \\
+    {\bf Activities:\bf} \href{https://csh.rit.edu}{Computer Science House}\\
 {\bf Minor:\bf} Mathematics {\bf GPA:\bf} 3.43 (Honors Distinction)
 
 
 \section{\small PROJECTS}
 {\bf \ExternalLink \href{https://github.com/openshift/cluster-ingress-operator}{OpenShift Ingress Operator}}
 \begin{itemize}
-    \item Enables external access to an OpenShift cluster by creating IngressController custom resources.
-    \item Monitors cluster Ingress capabilities and ensures external cluster application access is available.
+    \item Enables external access for applications running on OpenShift by creating Ingress Controllers based on instances of
+        a specific Custom Resource Definition.
+    \item Monitors cluster Ingress capabilities and verifies that critical cluster workloads are always accessible from the internet.
 \end{itemize}
 
 
 \section{\small SKILLS}
 \begin{compactdesc}
     \item[Languages] \begin{inparaenum} {Go, C, Python, Java, Bash} \end{inparaenum}
-    \item[Operating Systems] \begin{inparaenum} {Linux: Debian, Fedora, RHEL, Docker} \end{inparaenum}
+    \item[Operating Systems] \begin{inparaenum} {Linux: Debian, Fedora, RHEL, Docker/Podman} \end{inparaenum}
     \item[Technologies] \begin{inparaenum} {Kubernetes / OpenShift, Git, GitHub, Vim, Prometheus} \end{inparaenum}
     \item[Recreation] \begin{inparaenum} {Rock Climbing, Hiking, 3D Printing, Music, Disc Golf} \end{inparaenum}
 \end{compactdesc}
