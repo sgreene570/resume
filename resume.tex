@@ -1,4 +1,4 @@
-\documentclass[line, margin, 11pt]{res}
+\documentclass[line, margin, 10.5pt]{res}
 \usepackage{hyperref}
 \usepackage{textcomp}
 \usepackage{tikz}
@@ -30,12 +30,12 @@
     }
 
 \begin{document}
-\name{\Huge{Stephen Greene}}
+\name{\huge{Steve Greene}}
 
 \begin{resume}
 
-\section{\small OBJECTIVE}
-Seeking a remote Software Engineering role involving Kubernetes and networking.
+\section{\small MISSION}
+Passionate and driven Software Engineer seeking a challenging and rewarding remote position involving Golang, Kubernetes, and Open Source Software.
 
 \section{\small CONTACT}
 sgreene570@gmail.com \\
@@ -44,31 +44,30 @@ sgreene570@gmail.com \\
 \url{https://github.com/sgreene570}
 
 \section{\small EXPERIENCE}
-{\bf \large{Senior Software Engineer}} \hfill June 2020 - Present \\
-{\bf Red Hat, Raleigh, NC} \hfill \url{https://redhat.com}
+{\bf \large{Software Engineer (L4)}} \hfill July 2021 - Present \\
+{\bf bit.io} \hfill \url{https://bit.io}
 \begin{itemize}
-    \item Engineer on the OpenShift Container Platform Network Edge team.
-    \item Manage an HAProxy-based Ingress Controller via a Kubernetes Operator.
-    \item Enable cluster DNS via distributed CoreDNS instances.
-    \item Integrate with OpenShift's Prometheus stack to deliver cluster Ingress \& DNS metrics to cluster administrators.
-    \item Contribute to Kubernetes initiatives, such as CoreDNS and Gateway APIs.
+    \item Engineer on bit.io's affordable "serverless" Postgres platform.
+    \item Designed and implemented core Postgres pod-leasing Kubernetes controller.
+    \item Optimized cloud resource usage via automatic database scaling and cooling.
+    \item Maintained development and CI/CD pipelines to support rapid production iteration.
+    \item Tuned GRPC-based microservices written in Python and Go for efficiency and availability.
 \end{itemize}
 
+{\bf \large{Software Engineer}} \hfill June 2020 - July 2021 \\
+{\bf Red Hat} \hfill \url{https://redhat.com}
+\begin{itemize}
+    \item Engineer on the OpenShift Container Platform Network Edge team.
+    \item Contributed to upstream Kubernetes initiatives, such as CoreDNS and External-DNS.
+    \item Integrated an HAProxy-based Ingress Controller with Cloud Load Balancers via a Kubernetes Operator.
+\end{itemize}
 
 {\bf \large{OpenShift Internship}} \hfill May 2019 - August 2019 \\
-{\bf Red Hat, San Francisco, CA} \hfill \url{https://redhat.com}
+{\bf Red Hat} \hfill \url{https://redhat.com}
 \begin{itemize}
     \item Worked on the OpenShift Machine Config Operator, a Kubernetes Operator that manages cluster nodes.
     \item Contributed to Red Hat CoreOS, a unique "immutable" operating system that powers OpenShift nodes.
 \end{itemize}
-
-
-{\bf \large{Software Engineering Co-op}} \hfill January 2018 - July 2018 \\
-{\bf Intuit, Mountain View, CA} \hfill \url{https://intuit.com}
-\begin{itemize}
-    \item Optimized Java backend for Quickbooks Online Accountant.
-\end{itemize}
-
 
 \section{\small EDUCATION}
 {\bf Bachelor of Science in Computer Science} \hfill May 2020\\
@@ -76,22 +75,23 @@ Rochester Institute of Technology, Rochester, NY \\
     {\bf Activities:\bf} \href{https://csh.rit.edu}{Computer Science House}\\
 {\bf Minor:\bf} Mathematics {\bf GPA:\bf} 3.43 (Honors Distinction)
 
+\section{\footnotesize OPEN SOURCE CONTRIBUTIONS}
+{\bf \ExternalLink \href{https://github.com/kubernetes-sigs/external-dns}{External-DNS}}
+    Kubernetes controller to synchronize services with DNS providers.
 
-\section{\small PROJECTS}
-{\bf \ExternalLink \href{https://github.com/openshift/cluster-ingress-operator}{OpenShift Ingress Operator}}
-\begin{itemize}
-    \item Enables external access for applications running on OpenShift by creating Ingress Controllers based on instances of
-        a specific Custom Resource Definition.
-    \item Monitors cluster Ingress capabilities and verifies that critical cluster workloads are always accessible from the internet.
-\end{itemize}
+{\bf \ExternalLink \href{https://github.com/kubernetes-sigs/controller-runtime}{Controller Runtime}}
+    Framework for developing Kubernetes controllers and operators.
 
+{\bf \ExternalLink \href{https://coredns.io/}{CoreDNS}}
+    Kubernetes DNS and service discovery plugin.
 
 \section{\small SKILLS}
 \begin{compactdesc}
-    \item[Languages] \begin{inparaenum} {Go, Python, Java, C, Bash} \end{inparaenum}
-    \item[Operating Systems] \begin{inparaenum} {Linux: Debian, Fedora, RHEL, Docker/Podman} \end{inparaenum}
-    \item[Technologies] \begin{inparaenum} {Kubernetes / OpenShift, Git, GitHub, Vim, Prometheus} \end{inparaenum}
-    \item[Recreation] \begin{inparaenum} {Rock Climbing, Hiking, 3D Printing, Music, Disc Golf} \end{inparaenum}
+    \item[Languages] \begin{inparaenum} {Go, Java, Python, C, \LaTeX} \end{inparaenum}
+    \item[Operating Systems] \begin{inparaenum} {Linux: Debian, Fedora, Docker/Podman, MacOS} \end{inparaenum}
+    \item[Infrastructure] \begin{inparaenum} {Kubernetes, vcluster, GCP, AWS, DataDog, GRPC} \end{inparaenum}
+    \item[Tools] \begin{inparaenum} {Werf, Devspace, Git, GitHub, Vim, Jetbrains IDEs} \end{inparaenum}
+    \item[Recreation] \begin{inparaenum} {Disc Golf, 3D Printing, Bluegrass Music} \end{inparaenum}
 \end{compactdesc}
 
 \end{resume}
