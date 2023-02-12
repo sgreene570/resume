@@ -28,10 +28,10 @@ jobs:
     - name: Upload resume to bucket
       uses: zdurham/s3-upload-github-action@master
       with:
-        args: --endpoint-url ${{ secrets.AWS_S3_ENDPOINT }}
+        args: --endpoint-url=${{ secrets.AWS_S3_ENDPOINT }}
       env:
         FILE: ./sgreeneResume.pdf
-        AWS_REGION: 'us-east-1'
+        AWS_REGION: ${{ secrets.AWS_S3_REGION }}
         S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         S3_KEY: ${{ secrets.S3_KEY }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
