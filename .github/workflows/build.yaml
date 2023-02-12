@@ -20,8 +20,8 @@ jobs:
       run: make
 
     - name: Save resume
-        uses: actions/upload-artifact@v3
-        with:
-          name: sgreeneResume.pdf
-          path: sgreeneResume.pdf
+      uses: actions/upload-artifact@v3
+      with:
+        name: sgreeneResume.pdf
+        path: sgreeneResume.pdf
 
