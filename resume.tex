@@ -10,6 +10,15 @@
 
 \addtolength{\topmargin}{-.25in}
 
+% shrink left/right margins
+\oddsidemargin -0.4in
+\evensidemargin -0.4in
+\textwidth     6.2in
+
+% shrink top/bottom margins
+\topmargin   -0.6in
+\textheight  9.6in
+
 \newcommand{\ExternalLink}{%
     \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
         \begin{scope}[x=1ex, y=1ex]
@@ -37,7 +46,7 @@
 \begin{resume}
 
 \section{\small MISSION}
-Software Engineer specializing in Golang, Kubernetes, and cloud networking, seeking to build scalable and high-performance distributed systems in the RTP area.
+Established software engineer specializing in Golang, Kubernetes, and cloud infrastructure, seeking to build and support scalable, high-performance distributed systems across clouds.
 
 \section{\small CONTACT}
 sgreene570@gmail.com \hfill (908) 300-1030 \\
@@ -45,24 +54,34 @@ sgreene570@gmail.com \hfill (908) 300-1030 \\
 \url{https://github.com/sgreene570}
 
 \section{\small EXPERIENCE}
-{\bf \large{Databricks}} \hfill \url{https://www.databricks.com} \\
-{\bf Software Engineer (L4)} \hfill June 2023 - Present
+{\bf \large{Confident Security}} \hfill \url{https://confident.security} \\
+{\bf Senior Software Engineer} \hfill June 2025 - Present
 \begin{itemize}
-    \item Engineer on the Online Tables team alongside former bit.io engineers.
-    \item Provide low latency, high throughput access to reverse-ETL data-serving tables.
-    \item Enable asynchronous, reliable table creation via durable control plane reconcilers.
-    \item Orchestrate decoupled storage and compute machinery via bespoke Kubernetes controllers.
-    \item Design and implement partitioned network infrastructure on AWS, Azure, and GCP.
-    \item Provide guidance on Kubernetes design, operations, and debugging principles.
+    \item Core contributor to \href{https://github.com/openpcc/openpcc}{OpenPCC}, a fully open-source implementation of Apple's Private Cloud Compute.
+    \item Manage infrastructure for Confident Security's managed private AI offering (based on OpenPCC).
+    \item Develop multi-layer Ubuntu-based hardened VM image to provide secure, attested AI inference.
+    \item Add support for additional clouds and Trusted Execution Environments (TEE) to OpenPCC.
+    \item Implement anonymous instrumentation and monitoring of production inference instances and workloads.
+\end{itemize}
+
+{\bf \large{Databricks}} \hfill \url{https://databricks.com} \\
+{\bf Software Engineer (L4)} \hfill June 2023 - June 2025
+\begin{itemize}
+    \item Engineer on the Lakebase team alongside former bit.io engineers.
+    \item Provided low-latency, high-throughput access to reverse-ETL data-serving tables in real time.
+    \item Enabled asynchronous, reliable table creation via durable control plane reconcilers at scale.
+    \item Orchestrated decoupled storage and compute machinery via bespoke Kubernetes controllers.
+    \item Designed and implemented partitioned network infrastructure on AWS, Azure, and GCP.
+    \item Provided guidance on Kubernetes design, operations, debugging, and scaling principles.
 \end{itemize}
 
 {\bf \large{bit.io}} \hfill (acquired by Databricks) \\
 {\bf Software Engineer (L4)} \hfill July 2021 - June 2023
 \begin{itemize}
-    \item Engineer for bit.io, an affordable serverless Postgres IaaS startup.
-    \item Designed and implemented core Postgres pod-leasing Kubernetes controller.
-    \item Optimized cloud resource usage via automated database scaling and cooling.
-    \item Deployed database infrastructure via cloud-provider managed Kubernetes clusters.
+    \item Engineer on the bit.io team, an affordable, easy to use serverless Postgres IaaS startup.
+    \item Designed and implemented core Postgres pod-leasing controller for Kubernetes orchestration.
+    \item Optimized cloud resource usage via fast and reliable database autoscaling.
+    \item Deployed database infrastructure via cloud-provider managed Kubernetes clusters (e.g. GKE).
     \item Maintained developer experience (incl. CI/CD pipelines) to support rapid iteration.
 \end{itemize}
 
@@ -80,23 +99,14 @@ Rochester Institute of Technology, Rochester, NY \hfill \url{https://rit.edu} \\
 {\bf Activities:\bf} \href{https://csh.rit.edu}{Computer Science House}\\
 {\bf Minor:\bf} Mathematics {\bf GPA:\bf} 3.43 (Honors Distinction)
 
-\section{\footnotesize OPEN SOURCE CONTRIBUTIONS}
-{\bf \ExternalLink \href{https://openshift.com}{OpenShift}}
-    Red Hat's Open Source Kubernetes distribution with extensions.
-
-{\bf \ExternalLink \href{https://github.com/kubernetes-sigs/external-dns}{External-DNS}}
-    Kubernetes controller for synchronizing services with DNS providers.
-
-{\bf \ExternalLink \href{https://github.com/kubernetes-sigs/controller-runtime}{Controller Runtime}}
-    Framework for developing Kubernetes controllers and operators.
-
 \section{\small SKILLS}
 \begin{compactdesc}
-\item[Languages] \hfill \begin{inparaenum} {Golang, Scala, Python, PostgreSQL, Rust(learning), \LaTeX} \end{inparaenum}
+\item[Languages] \hfill \begin{inparaenum} {Golang, Scala, Python, PostgreSQL, Rust (learning), \LaTeX} \end{inparaenum}
 \item[Operating Systems] \hfill \begin{inparaenum} {Ubuntu, Debian, Fedora, Docker, Podman, MacOS} \end{inparaenum}
 \item[Infrastructure] \hfill \begin{inparaenum} {Kubernetes, GCP, AWS, Azure, Postgres, gRPC} \end{inparaenum}
-\item[Tools] \hfill \begin{inparaenum} {Git, GitHub, Vim, Jetbrains IDEs, GPG, Helm} \end{inparaenum}
+\item[Tools] \hfill \begin{inparaenum} {Git, GitHub, Vim, JetBrains IDEs, Claude, Helm} \end{inparaenum}
 \item[Recreation] \hfill \begin{inparaenum} {Disc golf, Bicycling, Bluegrass music} \end{inparaenum}
+\item[Public Positions] \hfill \begin{inparaenum} {North Carolina Notary Public} \end{inparaenum}
 \end{compactdesc}
 
 \end{resume}
